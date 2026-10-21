@@ -7,5 +7,5 @@ gcc -std=c11 -Wall -Wextra -Werror bootloader.c test_bootloader.c -o boot_test
 ./boot_test
 ```
 
-The test verifier models signature acceptance/rejection; it is **not** a cryptographic implementation. An STM32 deployment must supply a real public-key verification routine, flash partition/erase/write functions, UART framing, reset-cause and watchdog drivers, and durable boot flags. This code has not run on physical hardware.
+The test verifier models signature acceptance/rejection; it is **not** a cryptographic implementation. An STM32 deployment must supply a public-key verification routine, flash partition/erase/write functions, UART framing, reset-cause and watchdog drivers, and durable boot flags.
 
